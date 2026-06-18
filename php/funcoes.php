@@ -1,5 +1,5 @@
 <?php
-    namespace projeto\projetoTI23T\php;
+    namespace Projeto\projetoTI23T\php;
 
     class Funcao{
         //Encapsulamento = EVITAR que outras classes do projeto acessem diretamente as suas variáveis
@@ -37,28 +37,32 @@
         //Somar
         public function somar(){
             $this->resultado = $this->num1 + $this->num2;
+            return "<br>A soma do $this->num1 e do $this->num2 é: $this->resultado<br>";
         }//FIM DO METODO SOMAR
 
         //SUBTRAIR
         public function subtrair(){
             $this->resultado = $this->num1 - $this->num2;
+            return "<br>A subtração do $this->num1 e do $this->num2 é: $this->resultado<br>";
         }//FIM DO METODO SUBTRAIR
 
         //MUTIPLICAR
         public function multiplicar(){
             $this->resultado = $this->num1 * $this->num2;
+            return "<br>A multiplicação do $this->num1 e do $this->num2 é: $this->resultado<br>";
         }//FIM DO METODO MULTIPLICAR
 
         //DIVIDIR
         public function dividir(){
-            if($this->num2 <= 0)
-                {
-                    $this->resultado = "Impossivel dividir por zeo!";
-                }
+            if($this->num1 <= 0 || $this->num2 <= 0)
+            {
+                return "Impossivel dividir por zero!";
+            }
             else
-                {
-                    $this->resultado = $this->num1 / $this->num2;
-                }
+            {
+                $this->resultado = $this->num1 / $this->num2;
+            }
+            return "<br>A divisão do $this->num1 e do $this->num2 é: $this->resultado<br>";
         }//FIM DO METODO DIVIDIR
 
 
