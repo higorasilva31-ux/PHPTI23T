@@ -19,12 +19,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="soma.php">Nada</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nada</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Operações
@@ -34,6 +28,8 @@
             <li><a class="dropdown-item" href="subtrair.php">Subtração</a></li>
             <li><a class="dropdown-item" href="multiplicar.php">Multiplicação</a></li>
             <li><a class="dropdown-item" href="dividir.php">Divisão</a></li>
+            <li><a class="dropdown-item" href="bhaskara.php">Bhaskara</a></li>
+            <li><a class="dropdown-item" href="imc.php">IMC</a></li>
           </ul>
         </li>
         <li class="nav-item">
