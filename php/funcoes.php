@@ -80,29 +80,49 @@
         } //fim do bhaskara
 
             //IMC
-        public function imc(float $altura, float $peso){
-            if($altura <= 0 || $peso <= 0)
+       public function imc(float $altura, float $peso)
             {
-                return "Impossível calcular valores menores ou igual a zero!!";
-            }
-            else
-            {
-            $resultado = $altura / ($peso * 2);
-            }
-            elseif($resultado < 20) 
-            {
-                return "Você está abaixo do peso!";
-            }
-            elseif($resultado > 20 $$ $resultado < 30)
-            {
-                return "Seu peso está na média!";
-            }
-            elseif($resultado > 30)
-            {
-                return "Você está acima do peso";
-            }
-        }
+                if ($altura <= 0 || $peso <= 0)
+                {
+                    return "Impossível calcular valores menores ou iguais a zero!";
+                }
 
+                $resultado = $peso / ($altura * 2);
+
+                if ($resultado < 18.5)
+                {
+                    return "Seu IMC é $resultado Você está abaixo do peso.";
+                }
+                elseif ($resultado < 25)
+                {
+                    return "Seu IMC é $resultado Seu peso está normal.";
+                }
+                elseif ($resultado < 30)
+                {
+                    return "Seu IMC é $resultado Você está com sobrepeso.";
+                }
+                else
+                {
+                    return "Seu IMC é $resultado Você está com obesidade.";
+                }
+            }
+
+            
+
+        //MEDIA
+        public function media(int $num1, int $num2, int $num3)
+        {
+            if ($num1 <= 0 || $num2 <= 0 || $num3 <= 0)
+                {
+                    return "Impossível calcular valores menores ou iguais a zero!";
+                }
+                else
+                {
+                    $resultado = ($num1 + $num2 + $num3) / 3;
+                    return "A média é: $resultado";
+                }
+
+        }
 
     }//Fim da classe Funcao
 ?><!-- Fechamento da tag php -->

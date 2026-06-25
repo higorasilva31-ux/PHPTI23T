@@ -30,6 +30,7 @@
             <li><a class="dropdown-item" href="dividir.php">Divisão</a></li>
             <li><a class="dropdown-item" href="bhaskara.php">Bhaskara</a></li>
             <li><a class="dropdown-item" href="imc.php">IMC</a></li>
+            <li><a class="dropdown-item" href="media.php">Media</a></li>
           </ul>
         </li>
         <li class="nav-item">

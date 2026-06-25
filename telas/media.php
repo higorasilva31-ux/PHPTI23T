@@ -17,19 +17,23 @@
         <div class="row g-3">
             <h1>IMC</h1>
             <div class="col">
-                        <input type="step" class="form-control" id="altura" name="altura" placeholder="Altura" >
+                        <input type="step" class="form-control" id="num1" name="num1" placeholder="num1" >
             </div>
             <div class="col">
-                        <input type="step" class="form-control" id="peso" name="peso" placeholder="Peso">
+                        <input type="step" class="form-control" id="num2" name="num2" placeholder="num2">
+            </div>
+             <div class="col">
+                        <input type="step" class="form-control" id="num3" name="num3" placeholder="num3">
             </div>
         </div>
         <button type="submit" style="text-align:center;margin-top:5%;padding:2%;" class="btn btn-dark">Calcular
             <?php
-                    if(isset($_POST['altura']) || isset($_POST['peso'])){
-                        $altura = (float)$_POST['altura'];
-                        $peso = (float)$_POST['peso'];
+                    if(isset($_POST['num1']) || isset($_POST['num2']) || isset($_POST['num3'])){
+                        $num1 = (float)$_POST['num1'];
+                        $num2 = (float)$_POST['num2'];
+                        $num3 = (float)$_POST['num3'];
                         //Chamo a variável que representa a classe Funcao
-                        $resultado = $funcao->imc($altura, $peso);
+                        $resultado = $funcao->media($num1, $num2, $num3);
                     }
             ?>
         </button>
